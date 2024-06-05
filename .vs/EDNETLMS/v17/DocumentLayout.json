@@ -1,0 +1,249 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\createleadpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\createleadpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\services\\createleadpageservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\services\\createleadpageservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\editleadpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\editleadpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\models\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:models\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\migrations\\20240605021047_databasecreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:migrations\\20240605021047_databasecreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Institution.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Models\\Institution.cs",
+              "RelativeDocumentMoniker": "Models\\Institution.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Models\\Institution.cs",
+              "RelativeToolTip": "Models\\Institution.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T09:16:22.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditLeadPage.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\EditLeadPage.razor",
+              "RelativeDocumentMoniker": "Pages\\EditLeadPage.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\EditLeadPage.razor",
+              "RelativeToolTip": "Pages\\EditLeadPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T09:01:59.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateLeadPageServices.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Services\\CreateLeadPageServices.cs",
+              "RelativeDocumentMoniker": "Pages\\Services\\CreateLeadPageServices.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Services\\CreateLeadPageServices.cs",
+              "RelativeToolTip": "Pages\\Services\\CreateLeadPageServices.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T08:55:37.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-05T08:34:52.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T08:32:33.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T08:24:10.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Pages\\_Host.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T08:24:08.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T08:24:06.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateLeadPage.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\CreateLeadPage.razor",
+              "RelativeDocumentMoniker": "Pages\\CreateLeadPage.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\CreateLeadPage.razor",
+              "RelativeToolTip": "Pages\\CreateLeadPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T08:23:28.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240605021047_DatabaseCreation.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Migrations\\20240605021047_DatabaseCreation.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240605021047_DatabaseCreation.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Migrations\\20240605021047_DatabaseCreation.cs",
+              "RelativeToolTip": "Migrations\\20240605021047_DatabaseCreation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T08:23:05.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T08:22:57.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\_Imports.razor",
+              "RelativeDocumentMoniker": "_Imports.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\_Imports.razor",
+              "RelativeToolTip": "_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T08:22:44.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T08:18:57.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Shared\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T08:18:55.957Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

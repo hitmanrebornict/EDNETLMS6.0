@@ -1,0 +1,199 @@
+﻿@page "/editlead"
+
+
+<h3>Create New Lead</h3>
+
+<RadzenTemplateForm TItem="string">
+	<RadzenRow Gap="2rem" Class="rz-p-0 rz-p-lg-4">
+		<RadzenColumn Size="12" SizeMD="6">
+			<RadzenStack>
+				<RadzenFieldset Text="Person Info">
+					<RadzenStack Gap="1rem">
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Family Name" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="FamilyName" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Given Name" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="GivenName" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Date of Birth" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Gender" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Tel Num" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="TelNum" Placeholder="Tel Num" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Email Address" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="EmailAddress" Placeholder="Email Address" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Address" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="AddressLine1" Placeholder="Address Line 1" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="AddressLine2" Placeholder="Address Line 2" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="City" Placeholder="City" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="PostCode" Placeholder="Post Code" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="State" Placeholder="State" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="Country" Placeholder="Country" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Education Level" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="EducationLevel" Placeholder="Education Level" />
+							</RadzenColumn>
+						</RadzenRow>
+					</RadzenStack>
+				</RadzenFieldset>
+
+			</RadzenStack>
+
+
+		</RadzenColumn>
+		<RadzenColumn Size="12" SizeMD="6">
+			<RadzenStack>
+				<RadzenFieldset Text="Lead Info">
+					<RadzenStack Gap="1rem">
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Course Interested" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Institution Interested" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="PIC" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="PIC" Placeholder="PIC" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="How do You Know Us?" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="EducationLevel" Placeholder="Education Level" />
+							</RadzenColumn>
+						</RadzenRow>
+					</RadzenStack>
+				</RadzenFieldset>
+				<RadzenFieldset Text="Remark">
+					<RadzenTextArea Placeholder="Please enter the remark here" class="w-100" aria-label="TextArea with placeholder" />
+				</RadzenFieldset>
+				<RadzenFieldset Text="Emergency Contact">
+					<RadzenStack Gap="1rem">
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Name" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="EmergencyName" Placeholder="Emergency Name" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Tel Num" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="EmergencyTel" Placeholder="Emergency Tel" />
+							</RadzenColumn>
+						</RadzenRow>
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Email Address" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenTextBox Style="width: 100%;" Name="EmergencyEmail" Placeholder="Emergency Email" />
+							</RadzenColumn>
+						</RadzenRow>
+					</RadzenStack>
+				</RadzenFieldset>
+			</RadzenStack>
+		</RadzenColumn>
+	</RadzenRow>
+</RadzenTemplateForm>
+
+@code {
+
+}
