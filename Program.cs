@@ -3,6 +3,7 @@ using EDNETLMS.Pages.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
+using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -10,11 +11,13 @@ var configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddRadzenComponents();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<CreateLeadPageServices>();
+builder.Services.AddScoped<EditLeadPageServices>();
 
 var app = builder.Build();
 

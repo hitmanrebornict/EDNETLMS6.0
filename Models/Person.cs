@@ -28,8 +28,11 @@ namespace EDNETLMS.Models
         public string? EmergencyContactName { get; set; }
 		public string? EmergencyContactPhoneNum { get; set; }
 		public string? EmergencyContactEmailAddress { get; set; }
-		public Institution Institution { get; set; }
+		public Institution? Institution { get; set; }
         public ICollection<Lead> Leads { get; set; }
-    }
+
+		public ICollection<PersonInterestedCourse> PersonInterestedCourses { get; set; }
+		public ICollection<PersonInterestedInstitution> PersonInterestedInstitution{ get; set; }
+	}
 
 }

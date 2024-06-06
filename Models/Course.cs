@@ -12,6 +12,8 @@ namespace EDNETLMS.Models
         public string? CourseDescription { get; set; }
 
         public ICollection<Lead> Leads { get; set; }
-    }
+
+		public ICollection<PersonInterestedCourse> PersonInterestedCourses { get; set; }
+	}
 
 }

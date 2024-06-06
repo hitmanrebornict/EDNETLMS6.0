@@ -9,7 +9,7 @@
 
 <h3>Create New Lead</h3>
 
-<RadzenTemplateForm TItem="string">
+<RadzenTemplateForm TItem="Person" Data="newPerson" Submit="@OnSubmit">
 	<RadzenRow Gap="2rem" Class="rz-p-0 rz-p-lg-4">
 		<RadzenColumn Size = "12" SizeMD="6">
 			<RadzenStack>
@@ -20,7 +20,8 @@
                         <RadzenLabel Text="Family Name" />
                     </RadzenColumn>
                     <RadzenColumn Size="12" SizeMD="8">
-						<RadzenTextBox Style="width: 100%;" Name="FamilyName" />
+						<RadzenTextBox Style="width: 100%;" Name="FamilyName" Placeholder="Family Name" @bind-Value="@newPerson.FamilyName" />
+								<RadzenRequiredValidator Component="FamilyName" Text="Please enter the family name"></RadzenRequiredValidator>
                     </RadzenColumn>
                 </RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -28,15 +29,19 @@
 								<RadzenLabel Text="Given Name" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="GivenName" />
+								<RadzenTextBox Style="width: 100%;" Name="GivenName" Placeholder="Given Name" @bind-Value="@newPerson.GivenName" />
+								<RadzenRequiredValidator Component="GivenName" Text="Please enter the given name"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
 							<RadzenColumn Size="12" SizeMD="4">
-								<RadzenLabel Text="Date of Birth" />
+								<RadzenLabel Text="Date of Birth" Placeholder="Date of Birth" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenDatePicker Name="DOB" @bind-Value="@newPerson.DateOfBirth" />
+								<RadzenDatePicker Name="DOB" @bind-Value="@newPerson.DateOfBirth" DateFormat="dd/MM/yyyy" />
+								<RadzenRequiredValidator Component="DOB" Text="Please enter the date of birth"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -44,8 +49,9 @@
 								<RadzenLabel Text="Gender" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenDropDown @bind-Value=@newPerson.Gender Data="@genderSelection" Style="width: 100%;" Name="Gender" >
+								<RadzenDropDown Placeholder="Please select gender" @bind-Value=@newPerson.Gender Data="@genderSelection" Style="width: 100%;" Name="Gender" >
 								</RadzenDropDown>
+								<RadzenRequiredValidator Component="Gender" Text="Please enter the gender"></RadzenRequiredValidator>
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -53,7 +59,9 @@
 								<RadzenLabel Text="Tel Num" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="TelNum" Placeholder="Tel Num" />
+								<RadzenTextBox Style="width: 100%;" Name="TelNum" Placeholder="Tel Num" @bind-Value="@newPerson.TelNum" />
+								<RadzenRequiredValidator Component="TelNum" Text="Please enter the tel num"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -61,7 +69,9 @@
 								<RadzenLabel Text="Email Address" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="EmailAddress" Placeholder="Email Address" />
+								<RadzenTextBox Style="width: 100%;" Name="EmailAddress" Placeholder="Email Address" @bind-Value="@newPerson.EmailAddress" />
+								<RadzenRequiredValidator Component="EmailAddress" Text="Please enter the email address"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -69,7 +79,9 @@
 								<RadzenLabel Text="Address" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="AddressLine1" Placeholder="Address Line 1"/>
+								<RadzenTextBox Style="width: 100%;" Name="AddressLine1" Placeholder="Address Line 1" @bind-Value="@newPerson.AddressLine1"/>
+								<RadzenRequiredValidator Component="AddressLine1" Text="Please enter the address line 1"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -77,7 +89,9 @@
 								
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="AddressLine2" Placeholder="Address Line 2" />
+								<RadzenTextBox Style="width: 100%;" Name="AddressLine2" Placeholder="Address Line 2" @bind-Value="@newPerson.AddressLine2" />
+								<RadzenRequiredValidator Component="AddressLine2" Text="Please enter the address line 2"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -85,7 +99,9 @@
 								
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="City" Placeholder="City"/>
+								<RadzenTextBox Style="width: 100%;" Name="City" Placeholder="City" @bind-Value="@newPerson.City" />
+								<RadzenRequiredValidator Component="City" Text="Please enter the city"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -93,7 +109,9 @@
 								
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="PostCode" Placeholder="Post Code"/>
+								<RadzenTextBox Style="width: 100%;" Name="PostCode" Placeholder="Post Code" @bind-Value="@newPerson.PostalCode" />
+								<RadzenRequiredValidator Component="PostCode" Text="Please enter the Postcode"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -101,7 +119,9 @@
 								
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="State" Placeholder="State" />
+								<RadzenTextBox Style="width: 100%;" Name="State" Placeholder="State" @bind-Value="@newPerson.State"/>
+								<RadzenRequiredValidator Component="State" Text="Please enter the state"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -109,15 +129,18 @@
 								
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="Country" Placeholder="Country" />
+								<RadzenTextBox Style="width: 100%;" Name="Country" Placeholder="Country" @bind-Value="@newPerson.Country" />
+								<RadzenRequiredValidator Component="Country" Text="Please enter the country"></RadzenRequiredValidator>
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
 							<RadzenColumn Size="12" SizeMD="4">
-								<RadzenLabel Text="Education Level" />
+								<RadzenLabel Text="Education Level"  />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="EducationLevel" Placeholder="Education Level" />
+								<RadzenTextBox Style="width: 100%;" Name="EducationLevel" Placeholder="Education Level" @bind-Value="@newPerson.EducationLevel" />
+								<RadzenRequiredValidator Component="EducationLevel" Text="Please enter the education level"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 					</RadzenStack>
@@ -136,18 +159,28 @@
 								<RadzenLabel Text="Course Interested" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
+								<RadzenDropDown TItem="Course" @bind-Value=@selectedCoursesList Data="@CoursesList"
+												TextProperty="CourseName" ValueProperty="CourseID" Style="width: 100%;" Name="Course"
+												Multiple=true Placeholder="Please select course" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+												FilterOperator="StringFilterOperator.Contains" Chips=true >
+								</RadzenDropDown>
+								<RadzenRequiredValidator Component="Course" Text="Please enter the interested course"></RadzenRequiredValidator>
 
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
 							<RadzenColumn Size="12" SizeMD="4">
 								<RadzenLabel Text="Institution Interested" />
+								
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenDropDown  @bind-Value=@selectedInstitutionList Data="@InstitutionList"
-								TextProperty="InstitutionName" Style="width: 100%;" Name="Institution"
-								Multiple=true >
+								<RadzenDropDown TItem="Institution" @bind-Value=@selectedInstitutionList Data="@InstitutionList"
+								TextProperty="InstitutionName" ValueProperty="InstitutionID" Style="width: 100%;" Name="Institution"
+												Multiple=true Placeholder="Please Select Institution" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+												FilterOperator="StringFilterOperator.Contains" Chips=true>
 								</RadzenDropDown>
+								<RadzenRequiredValidator Component="Institution" Text="Please enter the interested institution"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -155,7 +188,9 @@
 								<RadzenLabel Text="PIC" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="PIC" Placeholder="PIC" />
+								<RadzenTextBox Style="width: 100%;" Name="PIC" Placeholder="PIC" @bind-Value="@newLead.PIC" />
+								<RadzenRequiredValidator Component="PIC" Text="Please insert the PIC"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -163,13 +198,15 @@
 								<RadzenLabel Text="How do You Know Us?" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="EducationLevel" Placeholder="Education Level" />
+								<RadzenTextBox Style="width: 100%;" Name="Howdoyouknowus" Placeholder="How do you know us?" @bind-Value="@newLead.HowDoYouKnowUs" />
+								<RadzenRequiredValidator Component="Howdoyouknowus" Text="Please enter the how do you know us"></RadzenRequiredValidator>
+
 							</RadzenColumn>
 						</RadzenRow>
 					</RadzenStack>
 				</RadzenFieldset>
 				<RadzenFieldset Text="Remark">
-					<RadzenTextArea Placeholder="Please enter the remark here" class="w-100" aria-label="TextArea with placeholder" />
+					<RadzenTextArea Placeholder="Please enter the remark here" class="w-100" aria-label="TextArea with placeholder" @bind-Value="@newLead.Remark" />
 				</RadzenFieldset>
 				<RadzenFieldset Text="Emergency Contact">
 					<RadzenStack Gap="1rem">
@@ -178,7 +215,7 @@
 								<RadzenLabel Text="Name" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="EmergencyName" Placeholder="Emergency Name" />
+								<RadzenTextBox Style="width: 100%;" Name="EmergencyName" Placeholder="Emergency Name" @bind-Value="@newPerson.EmergencyContactName" />
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -186,7 +223,7 @@
 								<RadzenLabel Text="Tel Num" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="EmergencyTel" Placeholder="Emergency Tel" />
+								<RadzenTextBox Style="width: 100%;" Name="EmergencyTel" Placeholder="Emergency Tel" @bind-Value="@newPerson.EmergencyContactPhoneNum" />
 							</RadzenColumn>
 						</RadzenRow>
 					<RadzenRow AlignItems="AlignItems.Center">
@@ -194,7 +231,7 @@
 							<RadzenLabel Text="Email Address" />
 						</RadzenColumn>
 						<RadzenColumn Size="12" SizeMD="8">
-							<RadzenTextBox Style="width: 100%;" Name="EmergencyEmail" Placeholder="Emergency Email" />
+								<RadzenTextBox Style="width: 100%;" Name="EmergencyEmail" Placeholder="Emergency Email" @bind-Value="@newPerson.EmergencyContactEmailAddress" />
 						</RadzenColumn>
 					</RadzenRow>
 					</RadzenStack>
@@ -203,7 +240,7 @@
 		</RadzenColumn>
 	</RadzenRow>
 	<RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" Gap="1rem" Class="rz-mt-8 rz-mb-4">
-		<RadzenButton ButtonType="ButtonType.Submit" Size="ButtonSize.Large" Icon="save" Text="Save" />
+		<RadzenButton ButtonType="ButtonType.Submit" Size="ButtonSize.Large" Icon="save" Text="Save"  />
 		<RadzenButton ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Large" Icon="cancel" Text="Cancel" />
 	</RadzenStack>
 </RadzenTemplateForm>
@@ -211,8 +248,10 @@
 
 @code {
 	Person newPerson = new Person();
-	List<Institution> InstitutionList,selectedInstitutionList = new List<Institution>();
-
+	Lead newLead = new Lead();
+	List<Institution> InstitutionList = new List<Institution>();
+	List<Course> CoursesList = new List<Course>();
+	List<int> selectedCoursesList, selectedInstitutionList = new List<int>();
 	List<string> genderSelection = new List<string>
 	{
 		"Male",
@@ -222,7 +261,27 @@
 	protected override async Task OnInitializedAsync()
 	{
 		InstitutionList = await CLPS.ReadInstitutionListAsync();
-		
+		CoursesList = await CLPS.ReadCourseListAsync();
 		await base.OnInitializedAsync();
 	}
+
+	async Task OnSubmit()
+	{
+
+		bool success = await CLPS.InsertDataAsync(newPerson, newLead, selectedCoursesList, selectedInstitutionList);
+
+		if (success)
+		{
+			// Handle success
+			CLPS.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Lead Created", Duration = 4000 });
+		}
+		else
+		{
+			// Handle failure
+			CLPS.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error Summary", Detail = "Lead Created Failed", Duration = 4000 });
+		}
+	}
+
+
 }
+

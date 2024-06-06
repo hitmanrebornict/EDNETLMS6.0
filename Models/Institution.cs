@@ -13,5 +13,6 @@ namespace EDNETLMS.Models
 
         public Country Country { get; set; }
         public ICollection<Person> Persons { get; set; }
-    }
+		public ICollection<PersonInterestedInstitution> PersonInterestedInstitution { get; set; }
+	}
 }
