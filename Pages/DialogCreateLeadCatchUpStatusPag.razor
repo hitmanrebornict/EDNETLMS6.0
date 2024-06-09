@@ -1,0 +1,81 @@
+﻿@using EDNETLMS.Models
+@using EDNETLMS.Pages.Services
+
+@inject Radzen.DialogService dialogService
+@inject DialogCreateLeadCatchUpStatusServices DCLCUSS
+@inject CreateLeadPageServices CLPS
+
+<RadzenTemplateForm TItem="LeadCatchUpStatus" Data="newLeadCatchUpStatus" Submit="@OnSubmit">
+	<RadzenFieldset Text="Lead Catch Up Status">
+		<RadzenStack  Gap="1rem">
+			<RadzenRow AlignItems="AlignItems.Center">
+				<RadzenColumn Size="12" SizeMD="4">
+					<RadzenLabel Text="Lead Status" />
+				</RadzenColumn>
+				<RadzenColumn Size="12" SizeMD="8">
+					<RadzenDropDown TItem="LeadCatchUpStatus" @bind-Value=@newLeadCatchUpStatus.LeadStatus Data="@leadStatusList"
+									Style="width: 100%;" Name="LeadStatus"
+									Placeholder="Please Select Lead Status">
+					</RadzenDropDown>
+					<RadzenRequiredValidator Component="LeadStatus" Text="Please enter the lead status"></RadzenRequiredValidator>
+				</RadzenColumn>
+			</RadzenRow>
+			<RadzenRow AlignItems="AlignItems.Center">
+				<RadzenColumn Size="12" SizeMD="4">
+					<RadzenLabel Text="Catch Up DateTime" />
+				</RadzenColumn>
+				<RadzenColumn Size="12" SizeMD="8">
+					<RadzenDatePicker Style="width: 100%;" Name="DoneDate" @bind-Value="@newLeadCatchUpStatus.DoneDate"/>
+					<RadzenRequiredValidator Component="Remark" Text="Please enter the Done Date"></RadzenRequiredValidator>
+				</RadzenColumn>
+			</RadzenRow>
+			<RadzenRow AlignItems="AlignItems.Center">
+				<RadzenColumn Size="12" SizeMD="4">
+					<RadzenLabel Text="Remark" />
+				</RadzenColumn>
+				<RadzenColumn Size="12" SizeMD="8">
+					<RadzenTextArea Placeholder="Please enter the remark here" class="w-100" aria-label="TextArea with placeholder" @bind-Value="@newLeadCatchUpStatus.LeadCatchUpRemark" Name="Remark"/>
+					<RadzenRequiredValidator Component="Remark" Text="Please enter the remark"></RadzenRequiredValidator>
+				</RadzenColumn>
+			</RadzenRow>
+		</RadzenStack>
+	</RadzenFieldset>
+	<RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" Gap="1rem" Class="rz-mt-8 rz-mb-4">
+		<RadzenButton ButtonType="ButtonType.Submit" Size="ButtonSize.Large" Icon="save" Text="Save" />
+		<RadzenButton ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Large" Icon="cancel" Text="Cancel" Click=@OnCancelButtonClick />
+	</RadzenStack>
+</RadzenTemplateForm>
+
+@code {
+	[Parameter]
+	public int LeadID { get; set; }
+
+	List<string> leadStatusList = new List<string>
+	{
+		"Lead",
+		"Applied",
+		"Convered"
+	};
+
+	LeadCatchUpStatus newLeadCatchUpStatus = new LeadCatchUpStatus();
+
+	async Task OnSubmit()
+	{
+		bool result = await DCLCUSS.InsertLeadCatchUpStatusAsync(newLeadCatchUpStatus,LeadID);
+
+		if (result)
+		{
+			CLPS.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Lead Edited", Duration = 4000 });
+			dialogService.Close();
+		}
+		else
+		{
+			CLPS.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = "Lead Status Creation Failed, Please Contact Yi Cheng!", Duration = 4000 });
+		}
+	}
+
+	void OnCancelButtonClick()
+	{
+		dialogService.Close();
+	}
+}

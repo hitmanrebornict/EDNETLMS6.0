@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="EDNETLMS.styles.css" rel="stylesheet" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
     <link rel="stylesheet" href="_content/Radzen.Blazor/css/material-base.css">
 
-    <script src="_content/Radzen.Blazor/Radzen.Blazor.js?v=@(typeof(Radzen.Colors).Assembly.GetName().Version)"></script>
-    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    
 </head>
 <body>
     @RenderBody()

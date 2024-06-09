@@ -30,7 +30,7 @@ namespace EDNETLMS.Pages.Services
            return await _context.Courses.ToListAsync();
 		}
 
-      
+		
 
 		public async Task<bool> InsertDataAsync(Person person, Lead lead, List<int> selectedCoursesList, List<int> selectedInstitutionList)
 		{

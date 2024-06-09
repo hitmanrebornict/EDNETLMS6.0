@@ -39,7 +39,7 @@
 								<RadzenLabel Text="Date of Birth" Placeholder="Date of Birth" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenDatePicker Name="DOB" @bind-Value="@newPerson.DateOfBirth" DateFormat="dd/MM/yyyy" />
+								<RadzenDatePicker Style="width: 100%;" Name="DOB" @bind-Value="@newPerson.DateOfBirth" DateFormat="dd/MM/yyyy" />
 								<RadzenRequiredValidator Component="DOB" Text="Please enter the date of birth"></RadzenRequiredValidator>
 
 							</RadzenColumn>
@@ -252,6 +252,7 @@
 	List<Institution> InstitutionList = new List<Institution>();
 	List<Course> CoursesList = new List<Course>();
 	List<int> selectedCoursesList, selectedInstitutionList = new List<int>();
+
 	List<string> genderSelection = new List<string>
 	{
 		"Male",

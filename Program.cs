@@ -18,6 +18,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<CreateLeadPageServices>();
 builder.Services.AddScoped<EditLeadPageServices>();
+builder.Services.AddScoped<DialogCreateLeadCatchUpStatusServices>();
+builder.Services.AddScoped<DialogLeadCatchUpStatusPageServices>();
 
 var app = builder.Build();
 

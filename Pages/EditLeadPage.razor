@@ -5,8 +5,9 @@
 
 @inject CreateLeadPageServices CLPS
 @inject EditLeadPageServices ELPS
+@inject Radzen.DialogService dialogService
 
-<h3>Create New Lead</h3>
+<h3>Edit Lead</h3>
 
 
 <RadzenTemplateForm TItem="Person" Data="newPerson" Submit="@OnSubmit">
@@ -39,7 +40,7 @@
 								<RadzenLabel Text="Date of Birth" Placeholder="Date of Birth" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenDatePicker Name="DOB" @bind-Value="@newPerson.DateOfBirth" DateFormat="dd/MM/yyyy" />
+								<RadzenDatePicker Style="width:100%" Name="DOB" @bind-Value="@newPerson.DateOfBirth" DateFormat="dd/MM/yyyy" />
 								<RadzenRequiredValidator Component="DOB" Text="Please enter the date of birth"></RadzenRequiredValidator>
 
 							</RadzenColumn>
@@ -180,7 +181,6 @@
 												FilterOperator="StringFilterOperator.Contains" Chips=true>
 								</RadzenDropDown>
 								<RadzenRequiredValidator Component="Institution" Text="Please enter the interested institution"></RadzenRequiredValidator>
-
 							</RadzenColumn>
 						</RadzenRow>
 						<RadzenRow AlignItems="AlignItems.Center">
@@ -200,7 +200,6 @@
 							<RadzenColumn Size="12" SizeMD="8">
 								<RadzenTextBox Style="width: 100%;" Name="Howdoyouknowus" Placeholder="How do you know us?" @bind-Value="@newLead.HowDoYouKnowUs" />
 								<RadzenRequiredValidator Component="Howdoyouknowus" Text="Please enter the how do you know us"></RadzenRequiredValidator>
-
 							</RadzenColumn>
 						</RadzenRow>
 					</RadzenStack>
@@ -236,6 +235,34 @@
 						</RadzenRow>
 					</RadzenStack>
 				</RadzenFieldset>
+				<RadzenFieldset Text="Lead Status">
+					<RadzenStack Gap="1rem">
+						<RadzenRow AlignItems="AlignItems.Center">
+							<RadzenColumn Size="12" SizeMD="4">
+								<RadzenLabel Text="Lead Status" />
+							</RadzenColumn>
+							<RadzenColumn Size="12" SizeMD="8">
+							<RadzenDropDown TItem="Lead" @bind-Value=@newLead.LeadStatus Data="@leadStatusList"
+											Style="width: 100%;" Name="LeadStatus"
+											Placeholder="Please Select Lead Status">
+							</RadzenDropDown>
+							<RadzenRequiredValidator Component="LeadStatus" Text="Please enter the lead status"></RadzenRequiredValidator>
+							</RadzenColumn>
+							<RadzenRow AlignItems="AlignItems.Center">
+								<RadzenColumn Size="12" SizeMD="4">
+									<RadzenLabel Text="Lead Catch Up" />
+								</RadzenColumn>
+								<RadzenColumn Size="12" SizeMD="4">
+									<RadzenCheckBox TValue="bool" Value="@leadCatchUpBool"></RadzenCheckBox>
+								</RadzenColumn>
+								<RadzenColumn Size="12" SizeMD="4">
+									<RadzenButton Text="Lead Catch Up Status" Click=@OpenLeadCatchUpStatusDialog></RadzenButton>
+								</RadzenColumn>
+							</RadzenRow>
+
+						</RadzenRow>		
+					</RadzenStack>
+				</RadzenFieldset>
 			</RadzenStack>
 		</RadzenColumn>
 	</RadzenRow>
@@ -250,6 +277,7 @@
 	[Parameter]
 	public string leadID { get; set; }
 
+	bool leadCatchUpBool = true;
 	Person newPerson = new Person();
 	Lead newLead = new Lead();
 	List<Institution> InstitutionList = new List<Institution>();
@@ -261,16 +289,43 @@
 		"Female"
 	};
 
-	protected override async Task OnInitializedAsync()
+	List<string> leadStatusList = new List<string>
+	{
+		"Lead",
+		"Applied",
+		"Convered"
+	};
+
+	protected async override Task OnInitializedAsync()
 	{
 		InstitutionList = await CLPS.ReadInstitutionListAsync();
 		CoursesList = await CLPS.ReadCourseListAsync();
-		newPerson = ELPS.readPersonByID(147);
+		newLead = await ELPS.readLeadByLeadIDAsync(leadID);
+		newPerson = await ELPS.readPersonByIDAsync(newLead.PersonID);
+		selectedCoursesList = await ELPS.readInterestedCourseListAsync(newLead.PersonID);
+		selectedInstitutionList = await ELPS.readInterestedInstitutionListAsync(newLead.PersonID);
 		await base.OnInitializedAsync();
 	}
 
 	async Task OnSubmit()
 	{
+		bool editResult = await ELPS.UpdatePersonInformationAsync(newPerson, newLead, selectedCoursesList, selectedInstitutionList);
 
+		if (editResult)
+		{
+			CLPS.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Lead Edited", Duration = 4000 });
+
+		}
+		else
+		{
+
+		}
 	}
+
+	async Task OpenLeadCatchUpStatusDialog(){
+		await dialogService.OpenAsync<DialogLeadCatchUpStatusPage>("Lead Catch Up Status",
+		new Dictionary<string, object>() { { "LeadID", newLead.LeadID} },
+		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+	}
+
 }
