@@ -20,6 +20,10 @@ builder.Services.AddScoped<CreateLeadPageServices>();
 builder.Services.AddScoped<EditLeadPageServices>();
 builder.Services.AddScoped<DialogCreateLeadCatchUpStatusServices>();
 builder.Services.AddScoped<DialogLeadCatchUpStatusPageServices>();
+builder.Services.AddScoped<GlobalData>();
+builder.Services.AddScoped<EditLeadCatchUpStatusPageServices>();
+builder.Services.AddScoped<ListTablePageServices>();
+builder.Services.AddScoped<FollowUpLeadListPageServices>();
 
 var app = builder.Build();
 

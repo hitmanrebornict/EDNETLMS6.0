@@ -6,6 +6,8 @@
 @inject CreateLeadPageServices CLPS
 @inject EditLeadPageServices ELPS
 @inject Radzen.DialogService dialogService
+@inject GlobalData GD
+@inject ListTablePageServices LTPS
 
 <h3>Edit Lead</h3>
 
@@ -50,7 +52,7 @@
 								<RadzenLabel Text="Gender" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenDropDown Placeholder="Please select gender" @bind-Value=@newPerson.Gender Data="@genderSelection" Style="width: 100%;" Name="Gender">
+								<RadzenDropDown Placeholder="Please select gender" @bind-Value=@newPerson.Gender Data="@GD.genderSelection" Style="width: 100%;" Name="Gender">
 								</RadzenDropDown>
 								<RadzenRequiredValidator Component="Gender" Text="Please enter the gender"></RadzenRequiredValidator>
 							</RadzenColumn>
@@ -242,7 +244,7 @@
 								<RadzenLabel Text="Lead Status" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-							<RadzenDropDown TItem="Lead" @bind-Value=@newLead.LeadStatus Data="@leadStatusList"
+							<RadzenDropDown TItem="Lead" @bind-Value=@newLead.LeadStatus Data="@GD.leadStatusList"
 											Style="width: 100%;" Name="LeadStatus"
 											Placeholder="Please Select Lead Status">
 							</RadzenDropDown>
@@ -283,19 +285,7 @@
 	List<Institution> InstitutionList = new List<Institution>();
 	List<Course> CoursesList = new List<Course>();
 	List<int> selectedCoursesList, selectedInstitutionList = new List<int>();
-	List<string> genderSelection = new List<string>
-	{
-		"Male",
-		"Female"
-	};
-
-	List<string> leadStatusList = new List<string>
-	{
-		"Lead",
-		"Applied",
-		"Convered"
-	};
-
+	
 	protected async override Task OnInitializedAsync()
 	{
 		InstitutionList = await CLPS.ReadInstitutionListAsync();
@@ -314,11 +304,10 @@
 		if (editResult)
 		{
 			CLPS.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Lead Edited", Duration = 4000 });
-
 		}
 		else
 		{
-
+			
 		}
 	}
 

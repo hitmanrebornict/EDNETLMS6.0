@@ -6,6 +6,7 @@
 @using EDNETLMS.Pages.Services
 
 @inject CreateLeadPageServices CLPS
+@inject GlobalData GD
 
 <h3>Create New Lead</h3>
 
@@ -49,7 +50,7 @@
 								<RadzenLabel Text="Gender" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenDropDown Placeholder="Please select gender" @bind-Value=@newPerson.Gender Data="@genderSelection" Style="width: 100%;" Name="Gender" >
+								<RadzenDropDown Placeholder="Please select gender" @bind-Value=@newPerson.Gender Data="@GD.genderSelection" Style="width: 100%;" Name="Gender" >
 								</RadzenDropDown>
 								<RadzenRequiredValidator Component="Gender" Text="Please enter the gender"></RadzenRequiredValidator>
 							</RadzenColumn>
@@ -252,12 +253,6 @@
 	List<Institution> InstitutionList = new List<Institution>();
 	List<Course> CoursesList = new List<Course>();
 	List<int> selectedCoursesList, selectedInstitutionList = new List<int>();
-
-	List<string> genderSelection = new List<string>
-	{
-		"Male",
-		"Female"
-	};
 
 	protected override async Task OnInitializedAsync()
 	{

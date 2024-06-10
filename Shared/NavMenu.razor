@@ -18,7 +18,17 @@
      
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="createlead">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> CreateLead
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Create Lead
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="leadlist">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Lead List
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="followuplist">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Follow Up List
             </NavLink>
         </div>
     </nav>
@@ -27,7 +37,7 @@
 @code {
     private bool collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string? NavMenuCssClass => collapseNavMenu? "collapse" : null;
 
     private void ToggleNavMenu()
     {

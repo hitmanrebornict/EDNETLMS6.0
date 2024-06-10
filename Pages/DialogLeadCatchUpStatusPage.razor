@@ -33,10 +33,6 @@
 	protected async override Task OnInitializedAsync()
 	{
 		LCUSList = await DLCUSPS.readLeadCatchUpStatusByLeadIDAsync(LeadID);
-		foreach (var item in LCUSList)
-		{
-			Debug.WriteLine($"LeadCatchUpStatus: {item.CreatedDate}");
-		}
 		await base.OnInitializedAsync();
 	}
 
@@ -45,6 +41,8 @@
 		await dialogService.OpenAsync<DialogCreateLeadCatchUpStatusPag>("Create Lead Catch Up Status",
 		new Dictionary<string, object>() { { "LeadID", LeadID } },
 		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+		LCUSList = await DLCUSPS.readLeadCatchUpStatusByLeadIDAsync(LeadID);
+		StateHasChanged();
 	}
 
 	async Task OnRowDoubleClick(DataGridRowMouseEventArgs<LeadCatchUpStatus> args)
@@ -52,6 +50,7 @@
 		await dialogService.OpenAsync<EditLeadCatchUpStatusPage>("Edit Lead Catch Up Status",
 		new Dictionary<string, object>() { { "selectedLeadCatchUpStatus", args.Data } },
 		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+		StateHasChanged();
 	}
 
 	

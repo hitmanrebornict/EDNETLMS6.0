@@ -4,6 +4,7 @@
 @inject Radzen.DialogService dialogService
 @inject DialogCreateLeadCatchUpStatusServices DCLCUSS
 @inject CreateLeadPageServices CLPS
+@inject GlobalData GD
 
 <RadzenTemplateForm TItem="LeadCatchUpStatus" Data="newLeadCatchUpStatus" Submit="@OnSubmit">
 	<RadzenFieldset Text="Lead Catch Up Status">
@@ -13,7 +14,7 @@
 					<RadzenLabel Text="Lead Status" />
 				</RadzenColumn>
 				<RadzenColumn Size="12" SizeMD="8">
-					<RadzenDropDown TItem="LeadCatchUpStatus" @bind-Value=@newLeadCatchUpStatus.LeadStatus Data="@leadStatusList"
+					<RadzenDropDown TItem="LeadCatchUpStatus" @bind-Value=@newLeadCatchUpStatus.LeadStatus Data="@GD.leadStatusList"
 									Style="width: 100%;" Name="LeadStatus"
 									Placeholder="Please Select Lead Status">
 					</RadzenDropDown>
@@ -49,13 +50,6 @@
 @code {
 	[Parameter]
 	public int LeadID { get; set; }
-
-	List<string> leadStatusList = new List<string>
-	{
-		"Lead",
-		"Applied",
-		"Convered"
-	};
 
 	LeadCatchUpStatus newLeadCatchUpStatus = new LeadCatchUpStatus();
 

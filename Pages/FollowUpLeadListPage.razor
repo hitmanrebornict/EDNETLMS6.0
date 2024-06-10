@@ -1,12 +1,13 @@
-﻿@page "/leadlist"
+﻿@page "/followuplist"
 
 @using EDNETLMS.Models
 @using EDNETLMS.Pages.Services
 
 @inject ListTablePageServices LTPS
 @inject NavigationManager _navigationManager
+@inject FollowUpLeadListPageServices FULPS
 
-<h3>Lead Table</h3>
+<h3>Follow Up Lead Table</h3>
 
 <RadzenDataGrid TItem="PersonLead" Data="@leadPersonDataList" SelectionMode="DataGridSelectionMode.Single" RowDoubleClick="@OnRowDoubleClick"
 				AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Simple" AllowSorting="true"
@@ -16,6 +17,12 @@
 		<RadzenDataGridColumn TItem="PersonLead" Property="GivenName" Title="Given Name" />
 		<RadzenDataGridColumn TItem="PersonLead" Property="LeadStatus" Title="Lead Status" />
 		<RadzenDataGridColumn TItem="PersonLead" Property="PIC" Title="PIC" />
+		<RadzenDataGridColumn TItem="PersonLead" Property="DoneDate" Title="Follow Up Date" />
+		<RadzenDataGridColumn TItem="PersonLead" Title="Done" >
+			<Template Context="data">
+					<RadzenCheckBox TValue="bool" Value="@data.Done" Disabled="true" />
+			</Template>
+		</RadzenDataGridColumn>
 	</Columns>
 </RadzenDataGrid>
 
@@ -25,7 +32,7 @@
 
 	protected async override Task OnInitializedAsync()
 	{
-		leadPersonDataList = await LTPS.readTableDataFromDatabase();
+		leadPersonDataList = await FULPS.readTableDataFromDatabase();
 		await base.OnInitializedAsync();
 	}
 
