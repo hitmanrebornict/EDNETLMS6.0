@@ -1,0 +1,51 @@
+﻿@page "/institutionedit"
+
+@using EDNETLMS.Models
+@using EDNETLMS.Pages.Services
+
+@inject MasterDataServices MDCPS
+@inject Radzen.DialogService dialogService
+
+<h3>Institution</h3>
+
+
+<RadzenButton Text="Create" Style="margin-bottom:12px" Click="@OpenCreateInstitutionDialog"></RadzenButton>
+
+<RadzenDataGrid TItem="InstitutionViewModel" Data="@InstitutionList" SelectionMode="DataGridSelectionMode.Single" RowDoubleClick="@OnRowDoubleClick"
+				AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Simple" AllowSorting="true"
+				FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" LogicalFilterOperator="LogicalFilterOperator.Or">
+	<Columns>
+		<RadzenDataGridColumn TItem="InstitutionViewModel" Property="InstitutionID" Title="ID" />
+		<RadzenDataGridColumn TItem="InstitutionViewModel" Property="InstitutionName" Title="Institution Name" />
+		<RadzenDataGridColumn TItem="InstitutionViewModel" Property="CountryName" Title="Country" />
+	</Columns>
+</RadzenDataGrid>
+
+@code {
+
+	List<InstitutionViewModel> InstitutionList = new List<InstitutionViewModel>();
+	
+
+	protected async override Task OnInitializedAsync()
+	{
+		
+		InstitutionList = await MDCPS.GetInstitutionViewModelsAsync();
+		await base.OnInitializedAsync();
+	}
+
+	async Task OnRowDoubleClick(DataGridRowMouseEventArgs<InstitutionViewModel> args)
+	{
+		InstitutionViewModel selectedInstitution = args.Data;
+
+		await dialogService.OpenAsync<DialogEditInstitution>("Edit Institution",
+		new Dictionary<string, object>() { { "selectedInstitution", selectedInstitution } },
+		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+	}
+
+	async Task OpenCreateInstitutionDialog()
+	{
+		await dialogService.OpenAsync<DialogCreateInstitution>("Create Institution",
+		new Dictionary<string, object>() { },
+		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+	}
+}

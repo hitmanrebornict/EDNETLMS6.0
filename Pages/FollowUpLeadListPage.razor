@@ -26,10 +26,11 @@
 	</Columns>
 </RadzenDataGrid>
 
+
 @code {
 	List<PersonLead> leadPersonDataList = new List<PersonLead>();
 	PersonLead selectedPersonLead = new PersonLead();
-
+	
 	protected async override Task OnInitializedAsync()
 	{
 		leadPersonDataList = await FULPS.readTableDataFromDatabase();

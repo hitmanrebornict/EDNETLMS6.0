@@ -1,9 +1,43 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+@using EDNETLMS.Models
+@using EDNETLMS.Pages.Services
 
-<h1>Hello, world!</h1>
+@inject IndexServices IS
 
-Welcome to your new app.
+<RadzenRow Style="margin-bottom:12px">
+    <RadzenColumn>
+        
+        <RadzenChart Style=" border: 1px solid #4A4E69; border-radius: 8px;" >
+            <RadzenText>Lead assigned to me</RadzenText>
+            <RadzenPieSeries Data="@leadStatusCountList" Title="Total" CategoryProperty="LeadStatus" ValueProperty="Count">
+                <RadzenSeriesDataLabels />
+            </RadzenPieSeries>
+        </RadzenChart>
+    </RadzenColumn>
+    <RadzenColumn>
+        <RadzenChart Style=" border: 1px solid #4A4E69; border-radius: 8px;">
+            <RadzenText>Follow Up Lead</RadzenText>
+            <RadzenPieSeries Data="@leadStatusDoneCountList" Title="Total" CategoryProperty="LeadDone" ValueProperty="LeadDoneCount">
+                <RadzenSeriesDataLabels />
+            </RadzenPieSeries>
+        </RadzenChart>
+    </RadzenColumn>
+</RadzenRow>
+
+<FollowUpLeadListPage ></FollowUpLeadListPage>
+
+@code{
+
+    List<LeadStatusCount> leadStatusCountList = new List<LeadStatusCount>();
+    List<LeadStatusCount> leadStatusDoneCountList = new List<LeadStatusCount>();
 
 
+    protected override async Task OnInitializedAsync()
+    {
+        leadStatusCountList = await IS.ReadLeadStatusCount();
+        leadStatusDoneCountList = await IS.ReadLeadsDoneStatusCount();
+
+        await base.OnInitializedAsync();
+    }
+}

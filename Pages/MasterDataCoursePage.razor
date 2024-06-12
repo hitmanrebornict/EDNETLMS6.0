@@ -1,0 +1,48 @@
+﻿@page "/coursedit"
+
+@using EDNETLMS.Models
+@using EDNETLMS.Pages.Services
+
+@inject MasterDataServices MDCPS
+@inject Radzen.DialogService dialogService
+
+<h3>Course</h3>
+
+
+<RadzenButton Text="Create" Style="margin-bottom:12px" Click="@OpenCreateCourseDialog"></RadzenButton>
+
+<RadzenDataGrid TItem="Course" Data="@coursesList" SelectionMode="DataGridSelectionMode.Single" RowDoubleClick="@OnRowDoubleClick"
+				AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Simple" AllowSorting="true"
+				FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" LogicalFilterOperator="LogicalFilterOperator.Or">
+	<Columns>
+		<RadzenDataGridColumn TItem="Course" Property="CourseID" Title="ID" />
+		<RadzenDataGridColumn TItem="Course" Property="CourseName" Title="Course Name" />
+	</Columns>
+</RadzenDataGrid>
+
+@code {
+
+	List<Course> coursesList = new List<Course>();
+
+	protected async override Task OnInitializedAsync()
+	{
+		coursesList = await MDCPS.readCoursesListAsync();
+		await base.OnInitializedAsync();
+	}
+
+	async Task OnRowDoubleClick(DataGridRowMouseEventArgs<Course> args)
+	{
+		Course selectedCourse = args.Data;
+
+		await dialogService.OpenAsync<DialogEditCourse>("Edit Course",
+		new Dictionary<string, object>() { { "selectedCourse", selectedCourse } },
+		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+	}
+
+	async Task OpenCreateCourseDialog()
+	{
+		await dialogService.OpenAsync<DialogCreateCourse>("Create Course",
+		new Dictionary<string, object>() { },
+		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+	}
+}

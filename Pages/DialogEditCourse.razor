@@ -1,0 +1,61 @@
+﻿@using EDNETLMS.Models
+@using EDNETLMS.Pages.Services
+
+@inject Radzen.DialogService dialogService
+@inject MasterDataServices MDCPS
+@inject GlobalData GD
+
+<RadzenTemplateForm TItem="Course" Data="selectedCourse" Submit="@OnSubmit">
+	<RadzenFieldset Text="Course">
+		<RadzenStack Gap="1rem">
+			<RadzenRow AlignItems="AlignItems.Center">
+				<RadzenColumn Size="12" SizeMD="4">
+					<RadzenLabel Text="Course ID" />
+				</RadzenColumn>
+				<RadzenColumn Size="12" SizeMD="8">
+					<RadzenNumeric Disabled=true Style="width: 100%;" Name="courseID" Placeholder="course Name" @bind-Value="@selectedCourse.CourseID" />
+				</RadzenColumn>
+			</RadzenRow>
+			<RadzenRow AlignItems="AlignItems.Center">
+				<RadzenColumn Size="12" SizeMD="4">
+					<RadzenLabel Text="Course Name" />
+				</RadzenColumn>
+				<RadzenColumn Size="12" SizeMD="8">
+					<RadzenTextBox Style="width: 100%;" Name="courseName" Placeholder="course Name" @bind-Value="@selectedCourse.CourseName" />
+					<RadzenRequiredValidator Component="courseName" Text="Please enter the course name"></RadzenRequiredValidator>
+				</RadzenColumn>
+			</RadzenRow>
+
+		</RadzenStack>
+	</RadzenFieldset>
+	<RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" Gap="1rem" Class="rz-mt-8 rz-mb-4">
+		<RadzenButton ButtonType="ButtonType.Submit" Size="ButtonSize.Large" Icon="save" Text="Save" />
+		<RadzenButton ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Large" Icon="cancel" Text="Cancel" Click=@OnCancelButtonClick />
+	</RadzenStack>
+</RadzenTemplateForm>
+
+
+@code {
+	[Parameter]
+	public Course selectedCourse { get; set; }
+
+	void OnSubmit()
+	{
+		bool success = MDCPS.updateCourse(selectedCourse);
+
+		if (success)
+		{
+			GD.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Course Edited", Duration = 4000 });
+			dialogService.Close();
+		}
+		else
+		{
+			GD.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error Summary", Detail = "Course Edit Failed", Duration = 4000 });
+		}
+	}
+
+	void OnCancelButtonClick()
+	{
+		dialogService.Close();
+	}
+}

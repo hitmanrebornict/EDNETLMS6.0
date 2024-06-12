@@ -1,0 +1,48 @@
+﻿@page "/countryedit"
+
+@using EDNETLMS.Models
+@using EDNETLMS.Pages.Services
+
+@inject MasterDataServices MDCPS
+@inject Radzen.DialogService dialogService
+
+<h3>Country</h3>
+
+
+<RadzenButton Text="Create" Style="margin-bottom:12px" Click="@OpenCreateCountryDialog"></RadzenButton>
+
+<RadzenDataGrid TItem="Country" Data="@countryList" SelectionMode="DataGridSelectionMode.Single" RowDoubleClick="@OnRowDoubleClick"
+				AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Simple" AllowSorting="true"
+				FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" LogicalFilterOperator="LogicalFilterOperator.Or">
+	<Columns>
+		<RadzenDataGridColumn TItem="Country" Property="CountryID" Title="ID" />
+		<RadzenDataGridColumn TItem="Country" Property="CountryName" Title="Country Name" />
+	</Columns>
+</RadzenDataGrid>
+
+@code {
+
+	List<Country> countryList = new List<Country>();
+
+	protected async override Task OnInitializedAsync()
+	{
+		countryList = await MDCPS.readCountryListAsync();
+		await base.OnInitializedAsync();
+	}
+
+	async Task OnRowDoubleClick(DataGridRowMouseEventArgs<Country> args)
+	{
+		Country selectedCountry = args.Data;
+
+		await dialogService.OpenAsync<DialogEditCountry>("Edit Country",
+		new Dictionary<string, object>() { { "selectedCountry", selectedCountry } },
+		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+	}
+
+	async Task OpenCreateCountryDialog()
+	{
+		await dialogService.OpenAsync<DialogCreateCountry>("Create Country",
+		new Dictionary<string, object>() { },
+		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+	}
+}

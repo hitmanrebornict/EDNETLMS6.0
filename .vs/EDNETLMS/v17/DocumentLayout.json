@@ -1,12 +1,290 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\dialogeditinstitution.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\dialogeditinstitution.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\services\\masterdataservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\services\\masterdataservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\dialogcreateinstitution.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\dialogcreateinstitution.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\dialogeditcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\dialogeditcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\dialogcreatecourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\dialogcreatecourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\createleadpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\createleadpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\models\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:models\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\masterdatainstitution.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\masterdatainstitution.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\services\\listtablepageservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\services\\listtablepageservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\masterdatacountrypage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\masterdatacountrypage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\masterdatacoursepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\masterdatacoursepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\dialogcreatecountry.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\dialogcreatecountry.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\dialogeditcountry.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\dialogeditcountry.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DialogEditInstitution.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogEditInstitution.razor",
+              "RelativeDocumentMoniker": "Pages\\DialogEditInstitution.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogEditInstitution.razor",
+              "RelativeToolTip": "Pages\\DialogEditInstitution.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T09:28:25.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateLeadPage.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\CreateLeadPage.razor",
+              "RelativeDocumentMoniker": "Pages\\CreateLeadPage.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\CreateLeadPage.razor",
+              "RelativeToolTip": "Pages\\CreateLeadPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T09:25:21.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DialogCreateCourse.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogCreateCourse.razor",
+              "RelativeDocumentMoniker": "Pages\\DialogCreateCourse.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogCreateCourse.razor",
+              "RelativeToolTip": "Pages\\DialogCreateCourse.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T09:21:31.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DialogEditCourse.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogEditCourse.razor",
+              "RelativeDocumentMoniker": "Pages\\DialogEditCourse.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogEditCourse.razor",
+              "RelativeToolTip": "Pages\\DialogEditCourse.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T09:21:27.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ListTablePageServices.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Services\\ListTablePageServices.cs",
+              "RelativeDocumentMoniker": "Pages\\Services\\ListTablePageServices.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Services\\ListTablePageServices.cs",
+              "RelativeToolTip": "Pages\\Services\\ListTablePageServices.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T09:15:45.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAuwC4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T07:44:23.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:25:02.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MasterDataCoursePage.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\MasterDataCoursePage.razor",
+              "RelativeDocumentMoniker": "Pages\\MasterDataCoursePage.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\MasterDataCoursePage.razor",
+              "RelativeToolTip": "Pages\\MasterDataCoursePage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:23:52.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MasterDataServices.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Services\\MasterDataServices.cs",
+              "RelativeDocumentMoniker": "Pages\\Services\\MasterDataServices.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Services\\MasterDataServices.cs",
+              "RelativeToolTip": "Pages\\Services\\MasterDataServices.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAAAIgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T07:22:57.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Models\\Country.cs",
+              "RelativeDocumentMoniker": "Models\\Country.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Models\\Country.cs",
+              "RelativeToolTip": "Models\\Country.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T07:20:21.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MasterDataInstitution.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\MasterDataInstitution.razor",
+              "RelativeDocumentMoniker": "Pages\\MasterDataInstitution.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\MasterDataInstitution.razor",
+              "RelativeToolTip": "Pages\\MasterDataInstitution.razor",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAawCUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:18:07.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MasterDataCountryPage.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\MasterDataCountryPage.razor",
+              "RelativeDocumentMoniker": "Pages\\MasterDataCountryPage.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\MasterDataCountryPage.razor",
+              "RelativeToolTip": "Pages\\MasterDataCountryPage.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:17:43.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Institution.cs",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Models\\Institution.cs",
+              "RelativeDocumentMoniker": "Models\\Institution.cs",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Models\\Institution.cs",
+              "RelativeToolTip": "Models\\Institution.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA9wA0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T07:17:13.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DialogCreateInstitution.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogCreateInstitution.razor",
+              "RelativeDocumentMoniker": "Pages\\DialogCreateInstitution.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogCreateInstitution.razor",
+              "RelativeToolTip": "Pages\\DialogCreateInstitution.razor",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAIwC0AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:15:43.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DialogCreateCountry.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogCreateCountry.razor",
+              "RelativeDocumentMoniker": "Pages\\DialogCreateCountry.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogCreateCountry.razor",
+              "RelativeToolTip": "Pages\\DialogCreateCountry.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:15:35.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DialogEditCountry.razor",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogEditCountry.razor",
+              "RelativeDocumentMoniker": "Pages\\DialogEditCountry.razor",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\DialogEditCountry.razor",
+              "RelativeToolTip": "Pages\\DialogEditCountry.razor",
+              "ViewState": "AQIAAB8AAAAAAAAAAADwvz0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:15:30.682Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

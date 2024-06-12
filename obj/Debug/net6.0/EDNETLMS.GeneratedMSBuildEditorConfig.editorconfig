@@ -26,8 +26,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlTGVhZFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogCreateCountry.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nQ3JlYXRlQ291bnRyeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogCreateCourse.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nQ3JlYXRlQ291cnNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogCreateInstitution.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nQ3JlYXRlSW5zdGl0dXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogCreateLeadCatchUpStatusPag.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nQ3JlYXRlTGVhZENhdGNoVXBTdGF0dXNQYWcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogEditCountry.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nRWRpdENvdW50cnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogEditCourse.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nRWRpdENvdXJzZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogEditInstitution.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nRWRpdEluc3RpdHV0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/DialogLeadCatchUpStatusPage.razor]
@@ -52,6 +76,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/ListTablePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFRhYmxlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/MasterDataCountryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGF0YUNvdW50cnlQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/MasterDataCoursePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGF0YUNvdXJzZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yicheng.yeong/source/repos/EDNETLMS/Pages/MasterDataInstitution.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGF0YUluc3RpdHV0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yicheng.yeong/source/repos/EDNETLMS/_Imports.razor]

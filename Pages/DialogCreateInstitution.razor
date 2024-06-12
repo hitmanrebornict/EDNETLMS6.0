@@ -1,0 +1,70 @@
+﻿@using EDNETLMS.Models
+@using EDNETLMS.Pages.Services
+
+@inject Radzen.DialogService dialogService
+@inject MasterDataServices MDCPS
+@inject GlobalData GD
+
+<RadzenTemplateForm TItem="Institution" Data="newInstitution" Submit="@OnSubmit">
+	<RadzenFieldset Text="Institution">
+		<RadzenStack Gap="1rem">
+			<RadzenRow AlignItems="AlignItems.Center">
+				<RadzenColumn Size="12" SizeMD="4">
+					<RadzenLabel Text="Institution Name" />
+				</RadzenColumn>
+				<RadzenColumn Size="12" SizeMD="8">
+					<RadzenTextBox Style="width: 100%;" Name="Institution" Placeholder="Institution Name" @bind-Value="@newInstitution.InstitutionName" />
+					<RadzenRequiredValidator Component="Institution" Text="Please enter the Institution name"></RadzenRequiredValidator>
+				</RadzenColumn>
+			</RadzenRow>
+			<RadzenRow AlignItems="AlignItems.Center">
+				<RadzenColumn Size="12" SizeMD="4">
+					<RadzenLabel Text="Institution Country" />
+				</RadzenColumn>
+				<RadzenColumn Size="12" SizeMD="8">
+					<RadzenDropDown Data="@countryList" @bind-Value="selectedCountryID"  TextProperty="CountryName" ValueProperty="CountryID" Name="CountryDropDown"
+						Style="width:100%" Placeholder="Please select the country"></RadzenDropDown>
+ 					<RadzenRequiredValidator Component="CountryDropDown" Text="Please enter the country name"></RadzenRequiredValidator>
+				</RadzenColumn>
+			</RadzenRow>
+		</RadzenStack>
+	</RadzenFieldset>
+	<RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" Gap="1rem" Class="rz-mt-8 rz-mb-4">
+		<RadzenButton ButtonType="ButtonType.Submit" Size="ButtonSize.Large" Icon="save" Text="Save" />
+		<RadzenButton ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Large" Icon="cancel" Text="Cancel" Click=@OnCancelButtonClick />
+	</RadzenStack>
+</RadzenTemplateForm>
+
+
+@code {
+	Institution newInstitution = new Institution();
+	List<Country> countryList = new List<Country>();
+	int selectedCountryID;
+
+	async Task OnSubmit()
+	{
+		bool success = await MDCPS.insertIntoInstitution(newInstitution,selectedCountryID);
+
+		if (success)
+		{
+			GD.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Institution Created", Duration = 4000 });
+			dialogService.Close();
+		}
+		else
+		{
+			GD.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error Summary", Detail = "Institution Creation Failed", Duration = 4000 });
+		}
+	}
+
+	protected async override Task OnInitializedAsync()
+	{
+		
+		countryList = await MDCPS.readCountryListAsync();
+		await base.OnInitializedAsync();
+	}
+
+	void OnCancelButtonClick()
+	{
+		dialogService.Close();
+	}
+}

@@ -12,12 +12,11 @@ namespace EDNETLMS.Pages.Services
     public class CreateLeadPageServices
     {
         private readonly ApplicationDbContext _context;
-		private readonly NotificationService _notificationService;
 
-        public CreateLeadPageServices(ApplicationDbContext applicationDbContext, NotificationService notificationService)
+
+        public CreateLeadPageServices(ApplicationDbContext applicationDbContext)
         {
             _context = applicationDbContext;
-			_notificationService = notificationService;
         }
 
         public async Task<List<Institution>> ReadInstitutionListAsync()
@@ -92,11 +91,6 @@ namespace EDNETLMS.Pages.Services
 				return false;
 			}
 		}
-
-        public void ShowNotification(NotificationMessage message)
-        {
-            _notificationService.Notify(message);
-        }
 
     }
 }

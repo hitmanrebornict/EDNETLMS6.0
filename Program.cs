@@ -1,4 +1,5 @@
 using EDNETLMS.Data;
+using EDNETLMS.Pages;
 using EDNETLMS.Pages.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
@@ -24,6 +25,10 @@ builder.Services.AddScoped<GlobalData>();
 builder.Services.AddScoped<EditLeadCatchUpStatusPageServices>();
 builder.Services.AddScoped<ListTablePageServices>();
 builder.Services.AddScoped<FollowUpLeadListPageServices>();
+builder.Services.AddScoped<IndexServices>();
+builder.Services.AddScoped<FollowUpLeadListPage>();
+builder.Services.AddTransient<ApplicationDbContext>();
+builder.Services.AddScoped<MasterDataServices>();
 
 var app = builder.Build();
 

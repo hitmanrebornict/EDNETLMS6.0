@@ -18,15 +18,8 @@ namespace EDNETLMS.Pages.Services
 
   
 
-        public async Task<List<PersonLead>> readTableDataFromDatabase()
+		public async Task<List<PersonLead>> readTableDataFromDatabase()
 		{
-			var query = from person in _context.Set<Person>()
-						join lead in _context.Set<Lead>()
-							on person.PersonID equals lead.LeadID
-						select new { person, lead };
-
-			var resultList = query.ToList();
-
             List<PersonLead> leadPersonList = new List<PersonLead>();
 
             leadPersonList = await _context.Leads
