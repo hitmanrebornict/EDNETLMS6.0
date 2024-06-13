@@ -1,8 +1,6 @@
 using EDNETLMS.Data;
 using EDNETLMS.Pages;
 using EDNETLMS.Pages.Services;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using Radzen;
 
@@ -15,7 +13,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddRadzenComponents();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+			options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<CreateLeadPageServices>();
 builder.Services.AddScoped<EditLeadPageServices>();
@@ -35,9 +33,9 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+	app.UseExceptionHandler("/Error");
+	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+	app.UseHsts();
 }
 
 app.UseHttpsRedirection();

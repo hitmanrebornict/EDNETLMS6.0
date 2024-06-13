@@ -27,7 +27,7 @@ namespace EDNETLMS.Pages.Services
 
 		public async Task<Lead> readLeadByLeadIDAsync(string LeadString)
 		{
-			int LeadId; 
+			int LeadId;
 
 			Int32.TryParse(LeadString, out LeadId);
 
@@ -67,13 +67,13 @@ namespace EDNETLMS.Pages.Services
 					//// Update person information
 					//var existingPerson = await _context.Persons.SingleAsync(p => p.PersonID == newPerson.PersonID);
 					//existingPerson = newPerson;
-				
+
 					_context.Persons.Update(newPerson);
 
 					// Update lead information
 					//var existingLead = await _context.Leads.SingleAsync(l => l.LeadID == newLead.LeadID);
 					//existingLead = newLead;
-				
+
 					_context.Leads.Update(newLead);
 
 					// Update interested courses

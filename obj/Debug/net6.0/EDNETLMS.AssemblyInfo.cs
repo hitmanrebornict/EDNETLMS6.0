@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EDNETLMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f253049588e44531fd49916602d4cac6c87eb820")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d9b66c7faf0d54181523a51fee038d550eb7d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EDNETLMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EDNETLMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

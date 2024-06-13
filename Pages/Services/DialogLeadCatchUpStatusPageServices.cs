@@ -22,6 +22,5 @@ namespace EDNETLMS.Pages.Services
 								 .Where(p => p.LeadID == LeadId)
 								 .ToListAsync();
 		}
-
 	}
 }

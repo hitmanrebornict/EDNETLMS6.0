@@ -39,9 +39,9 @@
 	[Parameter]
 	public Course selectedCourse { get; set; }
 
-	void OnSubmit()
+	async Task OnSubmit()
 	{
-		bool success = MDCPS.updateCourse(selectedCourse);
+		bool success = await MDCPS.updateCourse(selectedCourse);
 
 		if (success)
 		{

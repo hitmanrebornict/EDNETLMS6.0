@@ -1,57 +1,50 @@
 ﻿namespace EDNETLMS.Data
 {
-    using EDNETLMS.Models;
-    using Microsoft.EntityFrameworkCore;
-    using System.Collections.Generic;
-    using System.Reflection.Emit;
-    
+	using EDNETLMS.Models;
+	using Microsoft.EntityFrameworkCore;
 
-    public class ApplicationDbContext : DbContext
-    {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options)
-        {
-        }
+	public class ApplicationDbContext : DbContext
+	{
+		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+		: base(options)
+		{
+		}
 
-        public DbSet<Person> Persons { get; set; }
-        public DbSet<Course> Courses { get; set; }
-        public DbSet<Lead> Leads { get; set; }
-        public DbSet<LeadCatchUpStatus> LeadCatchUpStatuses { get; set; }
-        public DbSet<Institution> Institutions { get; set; }
-        public DbSet<Country> Countries { get; set; }
-        public DbSet<PersonInterestedCourse> PersonInterestedCourses { get; set; }
+		public DbSet<Person> Persons { get; set; }
+		public DbSet<Course> Courses { get; set; }
+		public DbSet<Lead> Leads { get; set; }
+		public DbSet<LeadCatchUpStatus> LeadCatchUpStatuses { get; set; }
+		public DbSet<Institution> Institutions { get; set; }
+		public DbSet<Country> Countries { get; set; }
+		public DbSet<PersonInterestedCourse> PersonInterestedCourses { get; set; }
 
 		public DbSet<PersonInterestedInstitution> PersonInterestedInstitution { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Person>().ToTable("Persons");
-            modelBuilder.Entity<Course>().ToTable("Courses");
-            modelBuilder.Entity<Lead>().ToTable("Leads");
-            modelBuilder.Entity<LeadCatchUpStatus>().ToTable("LeadCatchUpStatus");
+		{
+			modelBuilder.Entity<Person>().ToTable("Persons");
+			modelBuilder.Entity<Course>().ToTable("Courses");
+			modelBuilder.Entity<Lead>().ToTable("Leads");
+			modelBuilder.Entity<LeadCatchUpStatus>().ToTable("LeadCatchUpStatus");
 
-            modelBuilder.Entity<Institution>().ToTable("Institutions");
-            modelBuilder.Entity<Country>().ToTable("Countries");
+			modelBuilder.Entity<Institution>().ToTable("Institutions");
+			modelBuilder.Entity<Country>().ToTable("Countries");
 			modelBuilder.Entity<PersonInterestedInstitution>().ToTable("PersonInterestedInstitution");
 			modelBuilder.Entity<PersonInterestedCourse>().ToTable("PersonInterestedCourses");
 
 			modelBuilder.Entity<Person>()
-            .HasOne(p => p.Institution)
-            .WithMany(i => i.Persons)
-            .HasForeignKey(p => p.InstitutionID)
-             .OnDelete(DeleteBehavior.Restrict);
+			.HasOne(p => p.Institution)
+			.WithMany(i => i.Persons)
+			.HasForeignKey(p => p.InstitutionID)
+			 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<Person>().Property(e => e.PersonID).ValueGeneratedOnAdd();
+			modelBuilder.Entity<Person>().Property(e => e.PersonID).ValueGeneratedOnAdd();
 
 			modelBuilder.Entity<Institution>()
-                .HasOne(i => i.Country)
-                .WithMany(c => c.Institutions)
-                .HasForeignKey(i => i.CountryID)
+				.HasOne(i => i.Country)
+				.WithMany(c => c.Institutions)
+				.HasForeignKey(i => i.CountryID)
 				 .OnDelete(DeleteBehavior.Restrict);
-
-	
-
-
 
 			modelBuilder.Entity<PersonInterestedCourse>(entity =>
 			{
@@ -79,8 +72,7 @@
 					.HasForeignKey(e => e.InstitutionID);
 			});
 
-
 			base.OnModelCreating(modelBuilder);
-        }
-    }
+		}
+	}
 }

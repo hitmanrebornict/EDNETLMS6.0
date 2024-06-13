@@ -58,7 +58,6 @@
 
 	protected async override Task OnInitializedAsync()
 	{
-		
 		countryList = await MDCPS.readCountryListAsync();
 		await base.OnInitializedAsync();
 	}

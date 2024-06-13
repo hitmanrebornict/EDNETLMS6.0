@@ -27,7 +27,6 @@ namespace EDNETLMS.Pages.Services
 				"Female"
 			};
 
-
 		public void ShowNotification(NotificationMessage message)
 		{
 			_notificationService.Notify(message);

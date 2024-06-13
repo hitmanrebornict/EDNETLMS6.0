@@ -1,8 +1,7 @@
 ﻿using EDNETLMS.Data;
-using Radzen;
 using EDNETLMS.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Threading;
+using Radzen;
 
 namespace EDNETLMS.Pages.Services
 {
@@ -51,6 +50,6 @@ namespace EDNETLMS.Pages.Services
 			{
 				_semaphore.Release();
 			}
-        }
+		}
 	}
 }

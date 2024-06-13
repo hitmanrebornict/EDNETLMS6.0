@@ -12,6 +12,5 @@
 		public bool Done { get; set; }
 
 		public int LeadID { get; set; }
-		
 	}
 }

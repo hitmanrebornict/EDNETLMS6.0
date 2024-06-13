@@ -1,35 +1,28 @@
 ﻿using EDNETLMS.Data;
 using EDNETLMS.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Net.NetworkInformation;
-using System.Reflection.Metadata.Ecma335;
 using System.Diagnostics;
-using Radzen;
-using System;
 
 namespace EDNETLMS.Pages.Services
 {
-    public class CreateLeadPageServices
-    {
-        private readonly ApplicationDbContext _context;
+	public class CreateLeadPageServices
+	{
+		private readonly ApplicationDbContext _context;
 
+		public CreateLeadPageServices(ApplicationDbContext applicationDbContext)
+		{
+			_context = applicationDbContext;
+		}
 
-        public CreateLeadPageServices(ApplicationDbContext applicationDbContext)
-        {
-            _context = applicationDbContext;
-        }
-
-        public async Task<List<Institution>> ReadInstitutionListAsync()
-        {
-            return await _context.Institutions.ToListAsync();
-        }
+		public async Task<List<Institution>> ReadInstitutionListAsync()
+		{
+			return await _context.Institutions.ToListAsync();
+		}
 
 		public async Task<List<Course>> ReadCourseListAsync()
 		{
-           return await _context.Courses.ToListAsync();
+			return await _context.Courses.ToListAsync();
 		}
-
-		
 
 		public async Task<bool> InsertDataAsync(Person person, Lead lead, List<int> selectedCoursesList, List<int> selectedInstitutionList)
 		{
@@ -91,6 +84,5 @@ namespace EDNETLMS.Pages.Services
 				return false;
 			}
 		}
-
-    }
+	}
 }

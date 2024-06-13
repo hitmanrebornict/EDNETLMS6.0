@@ -41,7 +41,7 @@
 
 	async Task OnSubmit()
 	{
-		bool success = MDCPS.updateCountry(selectedCountry);
+		bool success = await MDCPS.updateCountry(selectedCountry);
 
 		if (success)
 		{

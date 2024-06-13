@@ -24,11 +24,10 @@
 @code {
 
 	List<InstitutionViewModel> InstitutionList = new List<InstitutionViewModel>();
-	
+
 
 	protected async override Task OnInitializedAsync()
 	{
-		
 		InstitutionList = await MDCPS.GetInstitutionViewModelsAsync();
 		await base.OnInitializedAsync();
 	}
@@ -38,7 +37,7 @@
 		InstitutionViewModel selectedInstitution = args.Data;
 
 		await dialogService.OpenAsync<DialogEditInstitution>("Edit Institution",
-		new Dictionary<string, object>() { { "selectedInstitution", selectedInstitution } },
+		new Dictionary<string, object>() {{ "selectedInstitution", selectedInstitution}},
 		new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
 	}
 

@@ -1,6 +1,4 @@
-﻿using EDNETLMS.Models;
-
-namespace EDNETLMS.Models
+﻿namespace EDNETLMS.Models
 {
 	public class PersonInterestedCourse
 	{
