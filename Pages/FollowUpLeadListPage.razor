@@ -1,4 +1,6 @@
-﻿@page "/followuplist"
+﻿@attribute [Authorize]
+
+@page "/followuplist"
 
 @using EDNETLMS.Models
 @using EDNETLMS.Pages.Services
@@ -6,6 +8,7 @@
 @inject ListTablePageServices LTPS
 @inject NavigationManager _navigationManager
 @inject FollowUpLeadListPageServices FULPS
+@inject GlobalData GD
 
 <h3>Follow Up Lead Table</h3>
 
@@ -33,7 +36,8 @@
 	
 	protected async override Task OnInitializedAsync()
 	{
-		leadPersonDataList = await FULPS.readTableDataFromDatabase();
+		string username = await GD.getUsernameString();
+		leadPersonDataList = await FULPS.verifyRoleAndReadData(username);
 		await base.OnInitializedAsync();
 	}
 

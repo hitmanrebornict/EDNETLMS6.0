@@ -1,4 +1,6 @@
-﻿@page "/coursedit"
+﻿@attribute [Authorize(Roles = "Admin")]
+
+@page "/coursedit"
 
 @using EDNETLMS.Models
 @using EDNETLMS.Pages.Services

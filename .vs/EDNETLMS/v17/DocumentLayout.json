@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|c:\\users\\yicheng.yeong\\source\\repos\\ednetlms\\wwwroot\\css\\body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{18554CCE-6D5C-4027-B40A-B8BD15EF750A}|EDNETLMS.csproj|solutionrelative:wwwroot\\css\\body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "register.css",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\register.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\register.css",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\register.css",
+              "RelativeToolTip": "wwwroot\\css\\register.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-24T02:51:20.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T02:46:30.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\login.css",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "wwwroot\\css\\login.css",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-24T02:23:24.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T02:20:51.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwEYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-24T02:15:49.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "body.css",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\body.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\body.css",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\body.css",
+              "RelativeToolTip": "wwwroot\\css\\body.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-24T02:13:35.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T02:01:31.332Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

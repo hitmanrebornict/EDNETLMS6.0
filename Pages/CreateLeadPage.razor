@@ -1,6 +1,6 @@
-﻿@page "/createlead"
+﻿@attribute [Authorize(Roles = "Admin")]
 
-
+@page "/createlead"
 
 @using EDNETLMS.Models
 @using EDNETLMS.Pages.Services
@@ -177,7 +177,7 @@
 							<RadzenColumn Size="12" SizeMD="8">
 								<RadzenDropDown TItem="Institution" @bind-Value=@selectedInstitutionList Data="@InstitutionList"
 								TextProperty="InstitutionName" ValueProperty="InstitutionID" Style="width: 100%;" Name="Institution"
-												Multiple=true Placeholder="Please Select Institution" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+												Multiple=true Placeholder="Please select Iinstitution" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
 												FilterOperator="StringFilterOperator.Contains" Chips=true>
 								</RadzenDropDown>
 								<RadzenRequiredValidator Component="Institution" Text="Please enter the interested institution"></RadzenRequiredValidator>
@@ -189,7 +189,9 @@
 								<RadzenLabel Text="PIC" />
 							</RadzenColumn>
 							<RadzenColumn Size="12" SizeMD="8">
-								<RadzenTextBox Style="width: 100%;" Name="PIC" Placeholder="PIC" @bind-Value="@newLead.PIC" />
+								@* <RadzenTextBox Style="width: 100%;" Name="PIC" Placeholder="PIC" @bind-Value="@newLead.PIC" /> *@
+								<RadzenDropDown Data="@usernameList" @bind-Value="@newLead.PIC" Name="PIC"
+								Style="width:100%" Placeholder="Please select PIC"></RadzenDropDown>
 								<RadzenRequiredValidator Component="PIC" Text="Please insert the PIC"></RadzenRequiredValidator>
 
 							</RadzenColumn>
@@ -253,11 +255,13 @@
 	List<Institution> InstitutionList = new List<Institution>();
 	List<Course> CoursesList = new List<Course>();
 	List<int> selectedCoursesList, selectedInstitutionList = new List<int>();
+	List<string> usernameList = new List<string>();
 
 	protected override async Task OnInitializedAsync()
 	{
 		InstitutionList = await CLPS.ReadInstitutionListAsync();
 		CoursesList = await CLPS.ReadCourseListAsync();
+		usernameList = await GD.GetAllUsernames();
 		await base.OnInitializedAsync();
 	}
 

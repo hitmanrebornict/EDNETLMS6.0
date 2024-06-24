@@ -1,4 +1,6 @@
-﻿@page "/countryedit"
+﻿@attribute [Authorize(Roles = "Admin")]
+
+@page "/countryedit"
 
 @using EDNETLMS.Models
 @using EDNETLMS.Pages.Services

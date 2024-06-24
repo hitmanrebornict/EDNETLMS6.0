@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\EDNETLMS.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\assets\\background-image.jpg",
+      "PackagePath": "staticwebassets\\assets\\background-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\body.css",
+      "PackagePath": "staticwebassets\\css\\body.css"
+    },
+    {
       "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
       "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
       "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
@@ -47,6 +59,10 @@
     {
       "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
       "Id": "C:\\Users\\yicheng.yeong\\source\\repos\\EDNETLMS\\wwwroot\\css\\site.css",

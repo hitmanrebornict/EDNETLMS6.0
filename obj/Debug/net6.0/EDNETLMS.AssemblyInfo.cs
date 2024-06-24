@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EDNETLMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d9b66c7faf0d54181523a51fee038d550eb7d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72c8d14dae350f076a867f561b2243e56bbfbc33")]
 [assembly: System.Reflection.AssemblyProductAttribute("EDNETLMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EDNETLMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

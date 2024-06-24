@@ -1,0 +1,7 @@
+﻿
+.page-background {
+    background-image: url('/assets/background-image.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+}

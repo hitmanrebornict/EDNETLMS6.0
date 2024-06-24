@@ -1,0 +1,89 @@
+﻿@attribute [Authorize(Roles = "Admin")]
+
+@page "/useredit"
+
+@using EDNETLMS.Data
+@using Microsoft.AspNetCore.Identity
+@using System.Diagnostics
+@using EDNETLMS.Pages.Services
+
+@inject UserManager<EDNETLMSUser> UserManager
+@inject MasterDataServices MDS
+@inject GlobalData GD
+@inject Radzen.DialogService dialogService
+
+
+<RadzenGrid TItem="UserViewModel" Data="@userList" PageSize="10" AllowFiltering="true" AllowColumnResize="true"
+            FilterMode="FilterMode.Simple" AllowPaging="true" SelectionMode="DataGridSelectionMode.Single">
+    <Columns>
+        <RadzenGridColumn TItem="UserViewModel" Property="UserName" Title="Username" />
+        <RadzenGridColumn TItem="UserViewModel" Property="Email" Title="Email" />
+        <RadzenGridColumn TItem="UserViewModel" Property="Roles" Title="Roles" />
+        <RadzenGridColumn TItem="UserViewModel" Title="Edit">
+            <Template Context="user">
+                <RadzenButton Text="Edit" Click="@(() => OnRowDoubleClick(user.UserName, user.Email, user.Roles))" />
+            </Template>
+        </RadzenGridColumn>
+        <RadzenGridColumn TItem="UserViewModel" Title="Delete">
+            <Template>
+                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="close" Size="ButtonSize.Small"
+                              Click="@((args) =>GridDeleteButtonClickUser(args, context))"></RadzenButton>
+            </Template>
+        </RadzenGridColumn>
+    </Columns>
+</RadzenGrid>
+
+@code {
+    private List<UserViewModel> userList = new List<UserViewModel>();
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        userList = await MDS.getUserList();
+        await base.OnInitializedAsync();
+    }
+
+    
+
+    public class UserViewModel
+    {
+        public string UserName { get; set; }
+        public string Email { get; set; }
+        public string Roles { get; set; }
+    }
+
+    protected async System.Threading.Tasks.Task GridDeleteButtonClickUser(MouseEventArgs args, dynamic data)
+    {
+
+        try
+        {
+            if (await dialogService.Confirm("Are you sure you want to delete this record?") == true)
+            {
+
+                var user = await UserManager.FindByNameAsync(data.UserName);
+                if (user != null)
+                {
+                    var result = await UserManager.DeleteAsync(user);
+               
+                }
+                await MDS.getUserList();
+                GD.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "The User is deleted.", Duration = 40000 });
+            }
+        }
+        catch (System.Exception e)
+        {
+            GD.ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = e.ToString(), Duration = 40000 });
+        }
+
+    }
+
+    async Task OnRowDoubleClick(string username, string email, string roles)
+    {
+        await dialogService.OpenAsync<DialogEditUser>("Edit User",
+        new Dictionary<string, object>() { { "selectedName", username },
+        { "selectedEmail", email },
+        { "selectedRole", roles },},
+        new DialogOptions() { Width = "700px", Height = "512px", Resizable = true, Draggable = true });
+    }
+}

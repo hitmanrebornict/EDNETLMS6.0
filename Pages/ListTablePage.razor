@@ -1,10 +1,13 @@
-﻿@page "/leadlist"
+﻿@attribute [Authorize]
+
+@page "/leadlist"
 
 @using EDNETLMS.Models
 @using EDNETLMS.Pages.Services
 
 @inject ListTablePageServices LTPS
 @inject NavigationManager _navigationManager
+@inject GlobalData GD
 
 <h3>Lead Table</h3>
 
@@ -25,7 +28,9 @@
 
 	protected async override Task OnInitializedAsync()
 	{
-		leadPersonDataList = await LTPS.readTableDataFromDatabase();
+		string username = await GD.getUsernameString();
+
+		leadPersonDataList = await LTPS.verifyRoleAndReadData(username);
 		await base.OnInitializedAsync();
 	}
 

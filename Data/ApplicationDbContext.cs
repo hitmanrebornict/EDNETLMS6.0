@@ -1,9 +1,12 @@
 ﻿namespace EDNETLMS.Data
 {
 	using EDNETLMS.Models;
+	using Microsoft.AspNetCore.Identity;
+	using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 	using Microsoft.EntityFrameworkCore;
 
-	public class ApplicationDbContext : DbContext
+
+	public class ApplicationDbContext : IdentityDbContext<EDNETLMSUser>
 	{
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
 		: base(options)
